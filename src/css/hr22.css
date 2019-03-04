@@ -1,0 +1,123 @@
+
+.jfx-button:hover{
+    -fx-background-color: rgb(16, 146, 206);
+    -fx-text-fill: #000000 ;
+    }
+    
+
+    .jfx-tab-pane .headers-region {
+        -fx-background-color: #01cafe;
+        
+    }
+    .jfx-tab-pane .tab-header-background {
+            -fx-background-color: #01cafe;
+    }
+    .jfx-tab-pane .tab-selected-line {
+        -fx-background-color: rgb(0, 5, 0);
+
+    }
+    
+    .tab-pane *.tab-header-area *.tab-header-background {
+        -fx-background-color:transparent;
+      }
+      
+      .tab-pane {
+        -fx-tab-min-width:120px;
+        -fx-tab-max-width:120px;
+        -fx-tab-min-height:50px;
+        -fx-tab-max-height:50px;
+      }
+      
+    
+      
+      
+        .hbox1:hover{
+            -fx-background-color: #d81818;
+        }
+       
+
+        .vbox100{
+            -fx-background-color: #01b3e3;
+        }
+        .vbox100:hover{
+            -fx-background-color: #022431;
+        }
+        .hbox3:hover{
+            -fx-background-color: #112024;
+        }
+        .vbox1{
+           
+            -fx-background-color: #224f64;
+
+        }
+        .vbox2 {
+
+            -fx-background-color: #17141d;
+        }
+        .vbox3{
+            -fx-background-color: #01cafe;
+        }
+
+
+
+        .hbox2{
+            -fx-background-color: white;
+           
+        }
+        .hbox2:hover{
+            -fx-background-color:#3a89ff;}
+         
+
+        .button1{
+            -fx-background-color:#000000;
+        }
+        /*.tab:selected {
+            -fx-background-color:rgba(164, 165, 165, 0.623) ;
+          }
+*/
+        .jfx-tab-pane .headers-region {
+            -fx-background-color: white;
+            
+        }
+        .tab {
+            
+            -fx-background-color:white ;
+           
+              }
+        .jfx-tab-pane .tab-header-background {
+                -fx-background-color: white;
+        }
+
+
+        .jfx-tab-pane1 .headers-region {
+            -fx-background-color: #000000b0;
+        }
+        .jfx-tab-pane1 .tab-header-background {
+            -fx-background-color: #000000b0;
+    }
+
+    .jfx-tab-pane1 .tab  {
+        -fx-background-color:#000000b0 ;
+
+    }
+    .jfx-tab-pane1 .tab:selected  {
+        -fx-background-color:#3a89ffce ;
+
+    }
+    .jfx-tab-pane1 .tab:hover  {
+        -fx-background-color:#3a89ffce ;
+
+    }
+    
+            
+      
+
+
+
+        
+
+        .jfx-tab-pane .tab-selected-line {
+            -fx-background-color:rgb(16, 146, 206); ;
+    
+        }
+      

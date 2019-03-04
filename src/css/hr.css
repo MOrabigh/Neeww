@@ -1,0 +1,36 @@
+
+.jfx-button:hover{
+    -fx-background-color: rgb(16, 146, 206);
+    -fx-text-fill: #000000 ;
+    }
+    .jfx-button{
+        -fx-text-fill: #000000 ;
+        }
+
+    .jfx-tab-pane .headers-region {
+        -fx-background-color: #838696;
+    }
+    .jfx-tab-pane .tab-header-background {
+        -fx-background-color: #838696;
+    }
+    .jfx-tab-pane .tab-selected-line {
+        -fx-background-color: rgb(16, 146, 206);
+        size: 10px;
+
+    }
+    
+    .separator *.line {
+        -fx-border-style: solid;
+        -fx-border-width: 0 0 1 0; /* its make really one-pixel-border */
+        -fx-border-color: rgb(0, 0, 0);
+    }
+
+ 
+    .HBox{
+        -fx-background-color: #001fd1;
+    }
+    .VBox{
+        color:blue;
+        -fx-background-color: #838696;
+    }
+   

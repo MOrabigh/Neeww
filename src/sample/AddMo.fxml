@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="663.0">
+         <children>
+            <VBox layoutX="-1.0" layoutY="85.0" prefHeight="422.0" prefWidth="300.0">
+               <children>
+                  <JFXTextField alignment="CENTER" disable="true" labelFloat="true" promptText="اسم العميل">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" labelFloat="true" promptText="هاتف العميل">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="65.0" promptText="الرقم التسلسلي للجهاز">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="90.0" promptText="وصف الجهاز">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" labelFloat="true" promptText="تكلفة الصيانة" text="0">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox prefHeight="188.0" prefWidth="300.0">
+                     <children>
+                        <VBox alignment="TOP_RIGHT" prefHeight="101.0" prefWidth="150.0">
+                           <children>
+                              <JFXDatePicker defaultColor="BLACK">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </JFXDatePicker>
+                              <JFXDatePicker defaultColor="BLACK">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </JFXDatePicker>
+                              <JFXDatePicker defaultColor="BLACK">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </JFXDatePicker>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="125.0" prefWidth="150.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" text="تاريخ انتهاء الضمان">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="27.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" text="تاريخ بدء الصيانة">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="27.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" text="تاريخ الإنتهاء المتوقع">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="27.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" layoutX="299.0" layoutY="85.0" prefHeight="250.0" prefWidth="300.0">
+               <children>
+                  <JFXTextField alignment="CENTER" labelFloat="true" promptText="رقم عملية الصيانة">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea labelFloat="true" prefHeight="58.0" prefWidth="300.0" promptText="وصف العطـل                              ">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="300.0">
+                     <children>
+                        <ComboBox prefWidth="150.0" promptText="فني الصيانة">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Label text="فني الصيانة :">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="344.0" prefHeight="55.0" prefWidth="300.0">
+                     <children>
+                        <ComboBox prefWidth="150.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Label text="حالة الصيانة :">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutY="-1.0" prefHeight="67.0" prefWidth="600.0">
+               <children>
+                  <Label stylesheets="@../css/hr.css" text="عملية الصيانة">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="-1.0" layoutY="65.0" prefHeight="20.0" prefWidth="663.0">
+               <children>
+                  <Separator prefHeight="20.0" prefWidth="664.0" stylesheets="@../css/hr.css">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Separator>
+               </children>
+            </HBox>
+            <HBox layoutX="297.0" layoutY="323.0" prefHeight="187.0" prefWidth="361.0">
+               <children>
+                  <JFXTabPane prefHeight="181.0" prefWidth="360.0" styleClass="jfx-tab-pane1" stylesheets="@../css/hr22.css" tabMinWidth="175.0">
+                     <tabs>
+                        <Tab text="القطع المضافة">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="304.0">
+                                 <children>
+                                    <VBox layoutX="2.0" prefHeight="147.0" prefWidth="259.0">
+                                       <children>
+                                          <TableView prefHeight="200.0" prefWidth="180.0">
+                                            <columns>
+                                              <TableColumn prefWidth="122.0" text="القطعة" />
+                                              <TableColumn prefWidth="122.0" text="الرقم التسلسلي" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="266.0" layoutY="-1.0" prefHeight="149.0" prefWidth="100.0">
+                                       <children>
+                                          <JFXTextField alignment="CENTER" promptText="الرقم التسلسلي">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                          </JFXTextField>
+                                          <JFXButton stylesheets="@../css/hr.css" text="ازالـة">
+                                             <graphic>
+                                                <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icons/rubbish-bin.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="اضافة قطع">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="10.0" prefHeight="144.0" prefWidth="229.0">
+                                       <children>
+                                          <ListView prefHeight="200.0" prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </ListView>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="245.0" layoutY="7.0" prefHeight="136.0" prefWidth="82.0">
+                                       <children>
+                                          <JFXTextField alignment="CENTER" promptText="بحث">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" top="5.0" />
+                                             </VBox.margin>
+                                          </JFXTextField>
+                                          <JFXButton stylesheets="@../css/hr.css" text="اضافة">
+                                             <graphic>
+                                                <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icons/plus-sign-in-a-black-circle.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXTabPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="513.0" prefHeight="46.0" prefWidth="600.0">
+         <children>
+            <JFXButton layoutX="405.0" layoutY="27.0" stylesheets="@../css/hr.css" text="طباعة">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/printer-.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="@../css/hr.css" text="الغاء">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/back-arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="@../css/hr.css" text="حذف">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/rubbish-bin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="62.0" layoutY="10.0" stylesheets="@../css/hr.css" text="حفظ">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="356.0" layoutY="27.0" stylesheets="@../css/hr.css" text="بحث">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/magnifier-tool.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

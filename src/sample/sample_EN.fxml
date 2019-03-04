@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="783.0" prefWidth="1390.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <JFXTabPane layoutX="180.0" layoutY="72.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="628.0" prefWidth="1370.0" side="LEFT" stylesheets="@../css/hr22.css" tabMaxHeight="350.0" tabMaxWidth="77.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="72.0">
+         <tabs>
+            <Tab fx:id="Main_Tab" onSelectionChanged="#Main_Tab">
+               <content>
+                  <AnchorPane fx:id="kk" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="icMaonMove" fitHeight="121.0" fitWidth="122.0" layoutX="510.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/customer-support%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="MainLable1" alignment="TOP_RIGHT" layoutX="399.0" layoutY="320.0" prefHeight="83.0" prefWidth="344.0" text="  Center Name    ">
+                           <font>
+                              <Font size="44.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="TOP_CENTER" layoutY="534.0" prefHeight="126.0" prefWidth="1142.0">
+                           <children>
+                              <Separator orientation="VERTICAL" prefHeight="133.0" prefWidth="20.0" stylesheets="/css/hr.css">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="90.0" />
+                                 </HBox.margin>
+                              </Separator>
+                              <VBox alignment="TOP_CENTER" prefHeight="126.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="32.0" prefWidth="166.0" text="Current MOs" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: black;" text="0" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="126.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="32.0" prefWidth="178.0" text="Finished MOs " textAlignment="CENTER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: black;" text="0" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="126.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="32.0" prefWidth="201.0" text="Pending MOs " textAlignment="CENTER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: black;" text="0" textAlignment="CENTER" textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="126.0" prefWidth="225.0">
+                                 <children>
+                                    <Label contentDisplay="RIGHT" prefHeight="30.0" prefWidth="253.0" text="SPs  about to be out of stock " textAlignment="CENTER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: black;" text="0" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="133.0" prefWidth="20.0" stylesheets="/css/hr.css">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="90.0" />
+                                 </HBox.margin>
+                              </Separator>
+                           </children>
+                        </HBox>
+                        <Separator layoutX="49.0" layoutY="522.0" prefHeight="22.0" prefWidth="1041.0" stylesheets="/css/hr.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Separator>
+                        <Separator layoutX="49.0" layoutY="649.0" prefHeight="22.0" prefWidth="1041.0" stylesheets="/css/hr.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Separator>
+                     </children></AnchorPane>
+               </content>
+               <graphic>
+                  <HBox prefHeight="300.0" prefWidth="66.0" styleClass="hbox2" stylesheets="/css/hr22.css">
+                     <children>
+                        <VBox prefHeight="251.0" prefWidth="66.0" stylesheets="/css/hr22.css">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="151.0" styleClass="button1" stylesheets="/css/hr22.css">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                                       <image>
+                                          <Image url="@../icons/customer-support.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="CENTER" prefHeight="150.0" prefWidth="120.0" rotate="90.0" text="Main" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="-50.0" right="40.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Tab>
+            <Tab onSelectionChanged="#Mangment_Customer_tab_selected">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="600.0">
+                           <children>
+                              <VBox layoutX="-1.0" layoutY="85.0" prefHeight="386.0" prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="Mobile number">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="40.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" layoutX="25.0" layoutY="165.0" promptText="Email">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="40.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" layoutX="299.0" layoutY="85.0" prefHeight="386.0" prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField fx:id="Txfiled_Name_Customer" alignment="CENTER" labelFloat="true" promptText="Name">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="40.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="Address">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="40.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" layoutY="471.0" prefHeight="54.0" prefWidth="600.0">
+                                 <children>
+                                    <JFXButton layoutX="144.0" layoutY="21.0" stylesheets="/css/hr.css" text="Change mobile number">
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/pencil-edit-button.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr.css" text="Cancel">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/back-arrow.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr.css" text="Delete ">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/rubbish-bin.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="62.0" layoutY="10.0" onAction="#Btn_Save_Customer" stylesheets="/css/hr.css" text="Save">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/save.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="356.0" layoutY="27.0" stylesheets="/css/hr.css" text="Search ">
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/magnifier-tool.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="66.0" prefWidth="600.0">
+                                 <children>
+                                    <Label stylesheets="/css/hr.css" text="ادارة العملاء">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="-1.0" layoutY="65.0" prefHeight="20.0" prefWidth="600.0">
+                                 <children>
+                                    <Separator prefHeight="22.0" prefWidth="601.0" stylesheets="/css/hr.css">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Separator>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+               <graphic>
+                  <HBox prefHeight="300.0" prefWidth="66.0" styleClass="hbox2" stylesheets="/css/hr22.css">
+                     <children>
+                        <VBox prefHeight="251.0" prefWidth="66.0" stylesheets="/css/hr22.css">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="151.0" styleClass="button1" stylesheets="/css/hr22.css">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                                       <image>
+                                          <Image url="@../icons/clerk-with-tie.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="120.0" rotate="90.0" text="Customers Management" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="-80.0" right="-140.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Tab>
+            <Tab fx:id="Mangment_MO_Tab" onSelectionChanged="#Mangment_MO_tab_selected">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTabPane layoutY="111.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="517.0" prefWidth="1107.0" styleClass="jfx-tab-pane1" stylesheets="/css/hr22.css" tabMinWidth="274.0">
+                           <tabs>
+                              <Tab text="Current MOs">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1069.0">
+                                             <children>
+                                                <VBox layoutX="10.0" prefHeight="444.0" prefWidth="1095.0">
+                                                   <children>
+                                                      <TableView>
+                                                         <columns>
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="MO number" />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Customer name" />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Customer mobile number" />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Technician " />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Expected ending date" />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Cost" />
+                                                         </columns>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </TableView>
+                                                   </children>
+                                                </VBox>
+                                                <HBox alignment="CENTER" layoutX="19.0" layoutY="413.0" prefHeight="60.0" prefWidth="1088.0">
+                                                   <children>
+                                                      <JFXButton prefHeight="39.0" prefWidth="92.0" stylesheets="/css/hr.css" text="Edit">
+                                                         <graphic>
+                                                            <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../icons/pencil-edit-button.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <HBox.margin>
+                                                            <Insets right="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXButton>
+                                                      <JFXTextField alignment="CENTER" promptText="Search by MO number">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Finished MOs">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1069.0">
+                                       <children>
+                                          <VBox layoutX="10.0" prefHeight="444.0" prefWidth="1095.0">
+                                             <children>
+                                                <TableView>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                   <columns>
+                                                      <TableColumn minWidth="182.0" prefWidth="0.0" text="MO number" />
+                                                      <TableColumn minWidth="182.0" prefWidth="0.0" text="Customer name" />
+                                                      <TableColumn minWidth="182.0" prefWidth="0.0" text="Customer mobile number" />
+                                                      <TableColumn minWidth="182.0" prefWidth="0.0" text="Technician " />
+                                                      <TableColumn minWidth="182.0" prefWidth="0.0" text="Expected ending date" />
+                                                      <TableColumn minWidth="182.0" prefWidth="0.0" text="Cost" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                          <HBox alignment="CENTER" layoutX="19.0" layoutY="413.0" prefHeight="60.0" prefWidth="1088.0">
+                                             <children>
+                                                <JFXButton prefHeight="39.0" prefWidth="92.0" stylesheets="/css/hr.css" text="Edit">
+                                                   <graphic>
+                                                      <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../icons/pencil-edit-button.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                   <HBox.margin>
+                                                      <Insets right="30.0" />
+                                                   </HBox.margin>
+                                                </JFXButton>
+                                                <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="221.0" promptText="Search by MO number">
+                                                   <HBox.margin>
+                                                      <Insets left="30.0" />
+                                                   </HBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Previous MOs">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1069.0">
+                                             <children>
+                                                <VBox layoutX="10.0" prefHeight="444.0" prefWidth="1095.0">
+                                                   <children>
+                                                      <TableView>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                         <columns>
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="MO number" />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Customer name" />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Customer mobile number" />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Technician " />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Expected ending date" />
+                                                            <TableColumn minWidth="182.0" prefWidth="0.0" text="Cost" />
+                                                         </columns>
+                                                      </TableView>
+                                                   </children>
+                                                </VBox>
+                                                <HBox alignment="CENTER" layoutX="19.0" layoutY="413.0" prefHeight="60.0" prefWidth="1088.0">
+                                                   <children>
+                                                      <JFXButton prefHeight="39.0" prefWidth="92.0" stylesheets="/css/hr.css" text="Edit">
+                                                         <graphic>
+                                                            <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../icons/pencil-edit-button.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <HBox.margin>
+                                                            <Insets right="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXButton>
+                                                      <JFXTextField alignment="CENTER" promptText="Search by MO number">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Pending MOs">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1069.0">
+                                             <children>
+                                                <VBox layoutX="10.0" prefHeight="444.0" prefWidth="1095.0">
+                                                   <children>
+                                                      <TableView>
+                                                         <columns>
+                                                            <TableColumn minWidth="274.0" prefWidth="0.0" text="MO number" />
+                                                            <TableColumn minWidth="274.0" prefWidth="0.0" text="Customer name" />
+                                                            <TableColumn minWidth="274.0" prefWidth="0.0" text="Customer mobile number" />
+                                                            <TableColumn minWidth="274.0" prefWidth="0.0" text="Cost" />
+                                                         </columns>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </TableView>
+                                                   </children>
+                                                </VBox>
+                                                <HBox alignment="CENTER" layoutX="19.0" layoutY="413.0" prefHeight="60.0" prefWidth="1088.0">
+                                                   <children>
+                                                      <JFXButton prefHeight="39.0" prefWidth="92.0" stylesheets="/css/hr.css" text="Edit">
+                                                         <graphic>
+                                                            <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../icons/pencil-edit-button.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <HBox.margin>
+                                                            <Insets right="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXButton>
+                                                      <JFXTextField alignment="CENTER" promptText="Search by MO number">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </JFXTabPane>
+                        <VBox alignment="CENTER" layoutX="912.0" layoutY="56.0" prefHeight="55.0" prefWidth="195.0">
+                           <children>
+                              <JFXButton fx:id="ShowMoWindowbuttn" onAction="#ShowMoWindow" prefHeight="50.0" prefWidth="195.0" stylesheets="@../css/hr.css" text="Add MO     ">
+                                 <graphic>
+                                    <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/plus-sign-in-a-black-circle1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" layoutX="254.0" prefHeight="51.0" prefWidth="600.0">
+                           <children>
+                              <Label stylesheets="/css/hr.css" text="ادارة عمليات الصيانة">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="254.0" prefHeight="20.0" prefWidth="600.0" />
+                        <Separator layoutX="-2.0" layoutY="46.0" prefHeight="15.0" prefWidth="1126.0" stylesheets="/css/hr.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Separator>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <HBox prefHeight="300.0" prefWidth="66.0" styleClass="hbox2" stylesheets="/css/hr22.css">
+                     <children>
+                        <VBox prefHeight="251.0" prefWidth="66.0" stylesheets="/css/hr22.css">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="151.0" styleClass="button1" stylesheets="/css/hr22.css">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                                       <image>
+                                          <Image url="@../icons/cms.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="120.0" rotate="90.0" text="MO Management" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="-80.0" right="-75.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Tab>
+            <Tab onSelectionChanged="#Mangment_SpearParts_tab_selected">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="600.0">
+                           <children>
+                              <VBox layoutX="-1.0" layoutY="85.0" prefHeight="386.0" prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="Spear part Number">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="Price">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextArea labelFloat="true" prefHeight="58.0" prefWidth="300.0" promptText="                      Spear part description">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="20.0" />
+                                       </VBox.margin>
+                                    </JFXTextArea>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" layoutX="299.0" layoutY="85.0" prefHeight="386.0" prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="Name">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="Quantity">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" layoutY="471.0" prefHeight="54.0" prefWidth="600.0">
+                                 <children>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr.css" text="Cancle">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/back-arrow.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr.css" text="Delete">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/rubbish-bin.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="62.0" layoutY="10.0" stylesheets="/css/hr.css" text="Save">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/save.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="356.0" layoutY="27.0" stylesheets="/css/hr.css" text="Search">
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/magnifier-tool.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="1.0" layoutY="-3.0" prefHeight="69.0" prefWidth="600.0">
+                                 <children>
+                                    <Label stylesheets="/css/hr.css" text="ادارة قطع الغيار">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="65.0" prefHeight="20.0" prefWidth="600.0">
+                                 <children>
+                                    <Separator prefHeight="22.0" prefWidth="601.0" stylesheets="/css/hr.css">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Separator>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+               <graphic>
+                  <HBox prefHeight="300.0" prefWidth="66.0" styleClass="hbox2" stylesheets="/css/hr22.css">
+                     <children>
+                        <VBox prefHeight="251.0" prefWidth="66.0" stylesheets="/css/hr22.css">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="151.0" styleClass="button1" stylesheets="/css/hr22.css">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                                       <image>
+                                          <Image url="@../icons/calendar.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="120.0" rotate="90.0" text="Spear Parts Management " VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="-80.0" right="-154.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Tab>
+            <Tab onSelectionChanged="#RequstSpearPart_tab_selected">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="470.0">
+                     <children>
+                        <AnchorPane layoutX="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="600.0">
+                           <children>
+                              <VBox alignment="TOP_RIGHT" layoutX="1.0" layoutY="74.0" prefHeight="164.0" prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="Request number">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <HBox alignment="CENTER" prefHeight="59.0" prefWidth="300.0">
+                                       <children>
+                                          <Label text="Supplier">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <ComboBox prefWidth="150.0">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" layoutX="-1.0" layoutY="471.0" prefHeight="54.0" prefWidth="600.0">
+                                 <children>
+                                    <JFXButton stylesheets="/css/hr.css" text="Print">
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/printer-.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr.css" text="Cancle">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/back-arrow.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr.css" text="Delete">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/rubbish-bin.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="62.0" layoutY="10.0" stylesheets="/css/hr.css" text="Save">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/save.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="356.0" layoutY="27.0" stylesheets="/css/hr.css" text="Search">
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/magnifier-tool.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="1.0" layoutY="-1.0" prefHeight="75.0" prefWidth="600.0">
+                                 <children>
+                                    <Label stylesheets="/css/hr.css" text="طلب قطع غيار">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="63.0" prefHeight="20.0" prefWidth="600.0">
+                                 <children>
+                                    <Separator prefHeight="22.0" prefWidth="601.0" stylesheets="/css/hr.css">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Separator>
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="247.0" prefHeight="207.0" prefWidth="600.0">
+                                 <children>
+                                    <JFXTabPane prefHeight="207.0" prefWidth="594.0" styleClass="jfx-tab-pane1" stylesheets="/css/hr22.css" tabMinWidth="280.0">
+                                       <tabs>
+                                          <Tab text="Selected spear parts ">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox layoutX="10.0" prefHeight="172.0" prefWidth="475.0">
+                                                         <children>
+                                                            <TableView prefHeight="200.0" prefWidth="200.0">
+                                                              <columns>
+                                                                <TableColumn prefWidth="246.0" text="spaer part" />
+                                                                <TableColumn prefWidth="227.0" text="quantity" />
+                                                              </columns>
+                                                            </TableView>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" layoutX="489.0" layoutY="28.0" prefHeight="130.0" prefWidth="91.0">
+                                                         <children>
+                                                            <JFXButton stylesheets="/css/hr.css" text="Remove">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../icons/rubbish-bin.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </Tab>
+                                          <Tab text="Add spear parts ">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox layoutX="10.0" prefHeight="172.0" prefWidth="475.0">
+                                                         <children>
+                                                            <TableView prefHeight="200.0" prefWidth="200.0">
+                                                               <columns>
+                                                                  <TableColumn prefWidth="246.0" text="spaer part" />
+                                                                  <TableColumn prefWidth="227.0" text="quantity" />
+                                                               </columns>
+                                                            </TableView>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" layoutX="486.0" layoutY="2.0" prefHeight="171.0" prefWidth="108.0">
+                                                         <children>
+                                                            <JFXTextField alignment="CENTER" promptText="Search">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                                                               </VBox.margin>
+                                                            </JFXTextField>
+                                                            <JFXButton stylesheets="/css/hr.css" text="Add">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../icons/plus-sign-in-a-black-circle.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <VBox.margin>
+                                                                  <Insets bottom="10.0" top="10.0" />
+                                                               </VBox.margin>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </Tab>
+                                       </tabs>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </JFXTabPane>
+                                 </children>
+                              </HBox>
+                              <VBox layoutX="301.0" layoutY="74.0" prefHeight="164.0" prefWidth="300.0">
+                                 <children>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="59.0" prefWidth="300.0">
+                                       <children>
+                                          <JFXDatePicker defaultColor="BLACK" prefHeight="25.0" prefWidth="113.0">
+                                             <HBox.margin>
+                                                <Insets left="35.0" right="20.0" />
+                                             </HBox.margin>
+                                          </JFXDatePicker>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="90.0" text="Request date">
+                                             <HBox.margin>
+                                                <Insets left="20.0" right="30.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+               <graphic>
+                  <HBox prefHeight="300.0" prefWidth="66.0" styleClass="hbox2" stylesheets="/css/hr22.css">
+                     <children>
+                        <VBox prefHeight="251.0" prefWidth="66.0" stylesheets="/css/hr22.css">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="151.0" styleClass="button1" stylesheets="/css/hr22.css">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                                       <image>
+                                          <Image url="@../icons/add-to-queue-button.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="120.0" rotate="90.0" text="Request Spare Parts" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="-80.0" right="-95.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Tab>
+            <Tab onSelectionChanged="#Mangment_supliers_tab_selected">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="430.0">
+                     <children>
+                        <AnchorPane layoutX="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="600.0">
+                           <children>
+                              <VBox layoutY="85.0" prefHeight="386.0" prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="اسم المزود">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="العنوان">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" layoutX="300.0" layoutY="85.0" prefHeight="386.0" prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="رقم المزود">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="رقم الهاتف">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="البريد الإلكتروني ">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" layoutY="471.0" prefHeight="54.0" prefWidth="600.0">
+                                 <children>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr.css" text="Cancle">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/back-arrow.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr.css" text="Delete">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/rubbish-bin.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="62.0" layoutY="10.0" stylesheets="/css/hr.css" text="Save">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/save.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="356.0" layoutY="27.0" stylesheets="/css/hr.css" text="Search">
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/magnifier-tool.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="1.0" layoutY="-2.0" prefHeight="68.0" prefWidth="600.0">
+                                 <children>
+                                    <Label stylesheets="/css/hr.css" text="ادارة المزودين">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutY="65.0" prefHeight="20.0" prefWidth="600.0">
+                                 <children>
+                                    <Separator prefHeight="22.0" prefWidth="601.0" stylesheets="/css/hr.css">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Separator>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+               <graphic>
+                  <HBox prefHeight="300.0" prefWidth="66.0" styleClass="hbox2" stylesheets="/css/hr22.css">
+                     <children>
+                        <VBox prefHeight="251.0" prefWidth="66.0" stylesheets="/css/hr22.css">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="151.0" styleClass="button1" stylesheets="/css/hr22.css">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                                       <image>
+                                          <Image url="@../icons/management.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="120.0" rotate="90.0" text="Suppliers Management" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="-80.0" right="-130.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Tab>
+            <Tab onSelectionChanged="#Mangment_Staff_tab_selected">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="601.0">
+                     <children>
+                        <AnchorPane layoutX="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="600.0">
+                           <children>
+                              <VBox layoutX="-1.0" layoutY="85.0" prefHeight="386.0" prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="الإسم">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="رقم الهاتف">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="الجنس">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <HBox alignment="CENTER" prefHeight="59.0" prefWidth="300.0">
+                                       <children>
+                                          <ComboBox prefWidth="150.0">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                          <Label text="نوع الوظيفة:">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" layoutX="299.0" layoutY="85.0" prefHeight="386.0" prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="الرقم الوظيفي">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="البريد الإلكتروني ">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="العنوان">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField alignment="CENTER" labelFloat="true" promptText="كلمة المرور">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" layoutY="471.0" prefHeight="54.0" prefWidth="600.0">
+                                 <children>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr22.css" text="Cancle">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/back-arrow.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" stylesheets="/css/hr.css" text="Delete">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/rubbish-bin.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="62.0" layoutY="10.0" stylesheets="/css/hr.css" text="Save">
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/save.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton layoutX="356.0" layoutY="27.0" stylesheets="/css/hr.css" text="Search">
+                                       <graphic>
+                                          <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/magnifier-tool.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutY="9.0" prefHeight="67.0" prefWidth="600.0">
+                                 <children>
+                                    <Label stylesheets="/css/hr.css" text="ادارة الموظفين">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="-1.0" layoutY="65.0" prefHeight="20.0" prefWidth="600.0">
+                                 <children>
+                                    <Separator prefHeight="22.0" prefWidth="601.0" stylesheets="/css/hr.css">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Separator>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+               <graphic>
+                  <HBox prefHeight="300.0" prefWidth="66.0" styleClass="hbox2" stylesheets="/css/hr22.css">
+                     <children>
+                        <VBox prefHeight="251.0" prefWidth="66.0" stylesheets="/css/hr22.css">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="151.0" styleClass="button1" stylesheets="/css/hr22.css">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                                       <image>
+                                          <Image url="@../icons/employee-card.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="120.0" rotate="90.0" text="Employee Management " VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="-80.0" right="-140.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children></HBox>
+               </graphic>
+            </Tab>
+            <Tab onSelectionChanged="#Mangment_Reports_tab_selected">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1121.0">
+                     <children>
+                        <HBox alignment="TOP_RIGHT" layoutY="56.0" prefHeight="572.0" prefWidth="1121.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.0">
+                           <children>
+                              <VBox prefHeight="512.0" prefWidth="857.0">
+                                 <children>
+                                    <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXDatePicker defaultColor="BLACK" layoutX="370.0" layoutY="60.0">
+                                             <HBox.margin>
+                                                <Insets right="30.0" top="50.0" />
+                                             </HBox.margin>
+                                          </JFXDatePicker>
+                                          <Label layoutX="571.0" layoutY="65.0" text="الى:">
+                                             <HBox.margin>
+                                                <Insets right="50.0" top="55.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <JFXDatePicker defaultColor="BLACK">
+                                             <HBox.margin>
+                                                <Insets right="30.0" top="50.0" />
+                                             </HBox.margin>
+                                          </JFXDatePicker>
+                                          <Label text="من: ">
+                                             <HBox.margin>
+                                                <Insets right="50.0" top="55.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <VBox prefHeight="100.0" prefWidth="125.0">
+                                             <children>
+                                                <JFXRadioButton nodeOrientation="LEFT_TO_RIGHT" text="اخر شهر">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="ReportsDate" />
+                                                   </toggleGroup>
+                                                </JFXRadioButton>
+                                                <JFXRadioButton nodeOrientation="LEFT_TO_RIGHT" text="اخر ثلاث اشهر" toggleGroup="$ReportsDate">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </JFXRadioButton>
+                                                <JFXRadioButton nodeOrientation="LEFT_TO_RIGHT" text="السنة الحالية" toggleGroup="$ReportsDate">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </JFXRadioButton>
+                                                <JFXRadioButton nodeOrientation="LEFT_TO_RIGHT" text="اخر سنة" toggleGroup="$ReportsDate">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </JFXRadioButton>
+                                                <JFXRadioButton nodeOrientation="LEFT_TO_RIGHT" style="-jfx-selected-color: black;" text="اختيار الفترة" toggleGroup="$ReportsDate">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </JFXRadioButton>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="206.0" prefWidth="857.0">
+                                       <children>
+                                          <TableView prefHeight="206.0" prefWidth="686.0">
+                                             <columns>
+                                                <TableColumn prefWidth="448.0" text="اسم الموظف" />
+                                                <TableColumn prefWidth="235.0" text="رقم الموظف" />
+                                             </columns>
+                                          </TableView>
+                                          <JFXTextField alignment="CENTER" promptText="رقم الموظف">
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" right="20.0" />
+                                             </HBox.margin>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </JFXTextField>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="186.0" prefWidth="857.0">
+                                       <children>
+                                          <TableView prefHeight="137.0" prefWidth="683.0">
+                                             <columns>
+                                                <TableColumn prefWidth="342.0" text="وصف الجهاز" />
+                                                <TableColumn minWidth="0.0" prefWidth="201.0" text="اسم العميل" />
+                                                <TableColumn minWidth="0.0" prefWidth="139.0" text="رقم عملية الصيانة" />
+                                             </columns>
+                                          </TableView>
+                                          <VBox prefHeight="137.0" prefWidth="170.0">
+                                             <children>
+                                                <JFXTextField alignment="CENTER" promptText="عملية الصيانة">
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" top="40.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                                <JFXTextField alignment="CENTER" layoutX="10.0" layoutY="10.0" promptText="هاتف العميل">
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" top="10.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="27.0" prefWidth="857.0">
+                                       <children>
+                                          <JFXButton fx:id="prbutton" onAction="#prbuttonReports" prefHeight="42.0" prefWidth="93.0" stylesheets="/css/hr.css" text="Print">
+                                             <graphic>
+                                                <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icons/printerhh.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="40.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <ListView fx:id="listv" nodeOrientation="RIGHT_TO_LEFT" prefHeight="513.0" prefWidth="196.0">
+                                 <HBox.margin>
+                                    <Insets right="10.0" top="10.0" />
+                                 </HBox.margin></ListView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="-1.0" layoutY="8.0" prefHeight="43.0" prefWidth="1120.0">
+                           <children>
+                              <Label stylesheets="/css/hr.css" text="التقارير">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="-1.0" layoutY="46.0" prefHeight="20.0" prefWidth="1122.0">
+                           <children>
+                              <Separator prefHeight="20.0" prefWidth="1122.0" stylesheets="/css/hr.css">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Separator>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+               </content>
+               <graphic>
+                  <HBox prefHeight="300.0" prefWidth="66.0" styleClass="hbox2" stylesheets="/css/hr22.css">
+                     <children>
+                        <VBox prefHeight="251.0" prefWidth="66.0" stylesheets="/css/hr22.css">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="151.0" styleClass="button1" stylesheets="/css/hr22.css">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                                       <image>
+                                          <Image url="@../icons/reportGood.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="120.0" rotate="90.0" text="Reports" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="-80.0" right="20.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Tab>
+            <Tab onSelectionChanged="#Mangment_Reports_tab_selected">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1121.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutX="320.0" layoutY="52.0" prefHeight="562.0" prefWidth="501.0">
+                           <children>
+                              <HBox prefHeight="20.0" prefWidth="600.0">
+                                 <children>
+                                    <Separator prefHeight="22.0" prefWidth="601.0" stylesheets="/css/hr.css">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Separator>
+                                 </children>
+                              </HBox>
+                              <JFXButton prefHeight="94.0" prefWidth="428.0" stylesheets="/css/hr.css" text="      Save database ">
+                                 <graphic>
+                                    <ImageView fitHeight="75.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/download-to-storage-drive.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton prefHeight="94.0" prefWidth="428.0" stylesheets="/css/hr.css" text="   Archive database ">
+                                 <graphic>
+                                    <ImageView fitHeight="75.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/database%20(3).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton prefHeight="94.0" prefWidth="428.0" stylesheets="/css/hr.css" text="  Change password ">
+                                 <graphic>
+                                    <ImageView fitHeight="75.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/pencil-edit-buttonaa.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" layoutX="271.0" prefHeight="67.0" prefWidth="600.0">
+                           <children>
+                              <Label stylesheets="/css/hr.css" text="ادوات">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <HBox prefHeight="300.0" prefWidth="66.0" styleClass="hbox2" stylesheets="/css/hr22.css">
+                     <children>
+                        <VBox prefHeight="251.0" prefWidth="66.0" stylesheets="/css/hr22.css">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="151.0" styleClass="button1" stylesheets="/css/hr22.css">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitWidth="35.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                                       <image>
+                                          <Image url="@../icons/settings-work-tool.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="120.0" rotate="90.0" text="Tools" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="-80.0" right="40.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Tab>
+         </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTabPane>
+      <HBox alignment="CENTER_LEFT" cache="true" prefHeight="56.0" prefWidth="1370.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="81.0" prefWidth="312.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/whhh.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Label fx:id="MainLable" alignment="TOP_RIGHT" prefHeight="83.0" prefWidth="443.0">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="400.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
